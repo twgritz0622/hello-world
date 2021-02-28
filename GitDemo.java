@@ -1,12 +1,13 @@
 /*****
- * Edit this line to have your name.
+ Trevor Gritz
  ******/
 public class GitDemo {
     
     private double previousNumber;
     
     public GitDemo() {
-        previousNumber = 1;
+        previousNumber = 1; 
+        private double reverseNum;
     }
     
     /*****
@@ -14,6 +15,7 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
+        previousNumber += num; 
         return 0;
     }
     
@@ -24,7 +26,8 @@ public class GitDemo {
      *****/
     public double findFactorial(int num) {
         double newNumber = 1;
-        
+        reverseNum = newNumber; 
+      
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
         }
@@ -40,7 +43,7 @@ public class GitDemo {
     public double reverseNumber(int num){
             
     double factorialNumber = 0;
-        
+     
         while( num != 0 ) {
             double temp = num % 10;
             factorialNumber = factorialNumber * 10 + temp;
